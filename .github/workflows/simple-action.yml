@@ -11,4 +11,4 @@ jobs:
         with:
           who-to-greet: Jando
       - name: Log Greeting time
-        run: echo "${{steps.greet}}"
+        run: echo "${{steps.greet.outputs.time}}"
