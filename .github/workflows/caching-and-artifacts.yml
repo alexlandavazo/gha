@@ -11,7 +11,7 @@ jobs:
         with:
           path: ~/.npm
           key: ${{runner.os}}-npm-cache-${{hashFiles('**/package-lock.json')}}
-          resotre-keys: |
+          restore-keys: |
             ${{runner.os}}-npm-cache-
             ${{runner.os}}-
       - name: Display Cache
